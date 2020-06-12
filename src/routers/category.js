@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const { isAuth } = require("../middlewares/auth");
+const { validateCategory } = require("../middlewares/validator");
 const {
   getCategory,
   addCategory,
@@ -10,7 +11,7 @@ const {
 
 router.use(isAuth);
 router.get("/", getCategory);
-router.post("/", addCategory);
+router.post("/", validateCategory, addCategory);
 router.get("/:id", getOneCategory);
 router.put("/:id", updateCategory);
 router.delete("/:id", deleteCategory);

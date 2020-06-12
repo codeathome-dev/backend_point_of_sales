@@ -26,18 +26,19 @@ module.exports = {
   addCategory: async (req, res) => {
     try {
       const { name } = req.body;
-      const checkCategory = Category.findOne({
-        where: { name },
+
+      const checkCategory = await Category.findOne({
+        where: { name: name },
       });
 
       if (checkCategory) {
-        res.send({
+        return res.send({
           code: 403,
           message: "Category name already exists",
         });
       }
 
-      const result = Category.save({ name });
+      const result = await Category.create({ name });
 
       res.send({
         code: 201,
@@ -46,6 +47,7 @@ module.exports = {
         data: result,
       });
     } catch (error) {
+      console.log(error);
       res.send({
         code: 500,
         status: "Internal server error!",

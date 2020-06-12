@@ -15,56 +15,6 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
         },
-        {
-          name: "Basic",
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          name: "Code",
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          name: "Design",
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          name: "Basic",
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          name: "Code",
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          name: "Design",
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          name: "Basic",
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          name: "Code",
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          name: "Design",
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          name: "Basic",
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
       ],
       {}
     );
