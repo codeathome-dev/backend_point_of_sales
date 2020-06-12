@@ -26,7 +26,19 @@ module.exports = {
   addCategory: async (req, res) => {
     try {
       const { name } = req.body;
+      const checkCategory = Category.findOne({
+        where: { name },
+      });
+
+      if (checkCategory) {
+        res.send({
+          code: 403,
+          message: "Category name already exists",
+        });
+      }
+
       const result = Category.save({ name });
+
       res.send({
         code: 201,
         status: "Ok",
