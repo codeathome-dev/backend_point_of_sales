@@ -17,7 +17,7 @@ module.exports = {
     check("description").notEmpty(),
     check("price").notEmpty(),
     check("stock").notEmpty(),
-    check("idCategory").notEmpty(),
+    check("category").notEmpty(),
     (req, res, next) => {
       const error = validationResult(req);
       if (!error.isEmpty()) {
