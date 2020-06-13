@@ -25,6 +25,10 @@ module.exports = {
       },
       category: {
         type: Sequelize.INTEGER,
+        references: {
+          model: "Categories", // it's table name not model name
+          key: "id",
+        },
       },
       createdAt: {
         allowNull: false,
