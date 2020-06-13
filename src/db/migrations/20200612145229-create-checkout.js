@@ -20,7 +20,6 @@ module.exports = {
       },
       receipt: {
         type: Sequelize.STRING,
-        unique: true,
       },
       createdAt: {
         allowNull: false,
