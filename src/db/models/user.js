@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
       role: DataTypes.STRING,
       status: DataTypes.STRING,
     },
-    {}
+    { underscored: true }
   );
   User.associate = function (models) {
     // associations can be defined here

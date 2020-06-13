@@ -12,8 +12,8 @@ module.exports = {
           password: password,
           role: "admin",
           status: "Active",
-          createdAt: new Date(),
-          updatedAt: new Date(),
+          created_at: new Date(),
+          updated_at: new Date(),
         },
       ],
       {}

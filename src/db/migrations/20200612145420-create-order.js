@@ -17,10 +17,10 @@ module.exports = {
       },
       product_id: {
         type: Sequelize.INTEGER,
-        // references: {
-        //   model: "Products", // it's table name not model name
-        //   key: "id",
-        // },
+        references: {
+          model: "Products", // it's table name not model name
+          key: "id",
+        },
       },
       quantity: {
         type: Sequelize.INTEGER,
@@ -28,11 +28,11 @@ module.exports = {
       price: {
         type: Sequelize.INTEGER,
       },
-      createdAt: {
+      created_at: {
         allowNull: false,
         type: Sequelize.DATE,
       },
-      updatedAt: {
+      updated_at: {
         allowNull: false,
         type: Sequelize.DATE,
       },

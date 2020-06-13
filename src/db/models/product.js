@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
       stock: DataTypes.INTEGER,
       category: DataTypes.INTEGER,
     },
-    {}
+    { underscored: true }
   );
   Product.associate = function (models) {
     // associations can be defined here

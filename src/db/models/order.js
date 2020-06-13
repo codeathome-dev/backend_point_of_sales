@@ -8,17 +8,17 @@ module.exports = (sequelize, DataTypes) => {
       price: DataTypes.INTEGER,
       quantity: DataTypes.INTEGER,
     },
-    {}
+    { underscored: true }
   );
   Order.associate = function (models) {
     // associations can be defined here
-    Order.belongsTo(models.Checkout, {
-      as: "Checkout",
-      foreignKey: "checkout_id",
-    });
     Order.belongsTo(models.Product, {
       as: "Product",
       foreignKey: "product_id",
+    });
+    Order.belongsTo(models.Checkout, {
+      as: "Checkout",
+      foreignKey: "checkout_id",
     });
   };
   return Order;

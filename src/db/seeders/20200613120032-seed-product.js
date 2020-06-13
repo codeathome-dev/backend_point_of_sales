@@ -12,8 +12,8 @@ module.exports = {
           price: 100000,
           stock: 100,
           category: 1,
-          createdAt: new Date(),
-          updatedAt: new Date(),
+          created_at: new Date(),
+          updated_at: new Date(),
         },
         {
           name: "MERN Stack",
@@ -22,8 +22,8 @@ module.exports = {
           price: 400000,
           stock: 900,
           category: 2,
-          createdAt: new Date(),
-          updatedAt: new Date(),
+          created_at: new Date(),
+          updated_at: new Date(),
         },
       ],
       {}

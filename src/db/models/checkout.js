@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
       user_id: DataTypes.INTEGER,
       receipt: DataTypes.STRING,
     },
-    {}
+    { underscored: true }
   );
   Checkout.associate = function (models) {
     // associations can be defined here
