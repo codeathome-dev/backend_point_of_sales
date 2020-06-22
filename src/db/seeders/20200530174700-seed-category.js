@@ -6,12 +6,12 @@ module.exports = {
       "Categories",
       [
         {
-          name: "Code",
+          name: "Website",
           created_at: new Date(),
           updated_at: new Date(),
         },
         {
-          name: "Design",
+          name: "Android",
           created_at: new Date(),
           updated_at: new Date(),
         },

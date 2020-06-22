@@ -18,6 +18,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "../uploads")));
 
 app.get("/", (req, res) => res.send("Hello World!"));
+app.get("/api/v1", (req, res) =>
+  res.send({ message: "Welcome to api point of sales!" })
+);
 app.use("/api/v1/users", auth);
 app.use("/api/v1/category", category);
 app.use("/api/v1/product", product);
